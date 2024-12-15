@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>bootstrap nav bar</title>
+     <!-- Latest compiled and minified CSS -->
+
+ <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://kit.fontawesome.com/afee43a0e7.js"></script>
+
+<link rel="stylesheet" href="{% static "css\style.css" %}">
+
+</head>
+<body>
+<header class="header-brg">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="{% static '/img/logo.png' %}" alt="" width="" height="50"> HatemaloSimra</a>
+        
+         <!-- Toggler/collapsible Button -->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+         <!-- Collapsible Navbar -->
+         <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto" >
+                <li class="nav-item"><a href="{% url "home" %}" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="{% url "about" %}" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="{% url "services" %}" class="nav-link">Services</a></li>
+                <li class="nav=item"><a href="{% url "portfolio" %}" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="{% url "team" %}" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Notice</a></li>
+                <li class="nav-item"><a href="{% url "contact" %}" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="{% url "form" %}" class="nav-link">Form</a></li>
+                <li class="nav-item"><a href="{% url "test" %}" class="nav-link">Test</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">SignUp</a></li>
+    
+            </ul>
+
+        </div>
+        
+
+    </div>
+
+</nav>
+</header>
+
+<div id="construction" class="container">
+    <h5>This website is under construction, All data are not accurate, but it is for testing purpose only.</h5>
+  </div>
+
+
+{% block content %}
+
+{% endblock content %}
+
+
+
+
+
+
+
+<footer class="footer-brg">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-3 p-3">
+            <h4>Hatemalo Saving and Credit Co-operative Ltd.<div class="underline"><span></span></div></h4>
+            <h4></h4>
+            <p>
+                Jeetpursimara Sub-Metropolitancity-2,
+                <br>Simara, Bara <br>
+                Madhesh Pradesh, Nepal <br><br>
+                py<strong>Phone:</strong> 053-521796<br>
+                <strong>E:</strong> hatemalo_info@gmail.com<br>
+            </p>
+        </div>
+        <div class="col-sm-3 p-3">
+            <h4>UseFull Link <div class="underline"><span></span></div></h4>
+            <ul>
+                <li><a href="{% url "home" %}" class="nav-link">Home</a></li>
+                <li><a href="{% url "about" %}" class="nav-link">AboutUs</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-3 p-3">
+            <h4>Our Services <div class="underline"><span></span></div></h4>
+            <ul>
+                <li><a href="#">Fixed Deposit</a></li>
+                <li><a href="#">Easy Loan</a></li>
+                <li><a href="#">Business Program</a></li>
+                <li><a href="#">Agricultural Support</a></li>
+                <li><a href="#">Daily Collection</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-3 p-3">
+            <h4>Our Social Network <div class="underline"><span></span></div></h4>
+            <p>Dive into 'Our Social Networks' – a digital haven where connections blossom. Explore shared experiences, forge new friendships, and celebrate the vitality of our interconnected online community. Join us today!</p>
+            <div class="social-link">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<hr>
+<p class="copyright">IT One Pvt. Ltd. © 2024 - All Rights Reserved </p>
+
+</footer>
+
+
+

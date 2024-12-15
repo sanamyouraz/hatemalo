@@ -1,0 +1,75 @@
+
+{% extends "base.html" %}
+
+
+{% block content %}
+{% load static %}
+
+<div class="container text-center">
+    <h1>Contact Us</h1>
+    <p>Connect with us effortlessly ! Reach out through our contact details for inquiries, collaborations, or just to say hello. Find our location easily and experience personalized engagement with our team.</p>
+    <div class="container"> 
+        <div class="row py-5 g-3">
+            <div class="col-md-6 send_message text-white">
+                <h2>Send Message</h2>
+                <form class="p-4 mt-5">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Enter Your Full Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="xyz">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Enter Your Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <btn class="btn btn-primary">Send Now</btn>
+
+                    </div>
+
+                </form>
+    
+            </div>
+            <div class="col-md-6 call_us text-white">
+                <h2>Call Us</h2>
+                <div class="info">
+                    <div class="p-4 mt-5 address">
+                        <h4><i class="fa-solid fa-location-dot"></i>Location:</h4>
+                        <p>Jeetpursimara Sub-Metropolitancity-2, Simara, Bara, Madhesh Pradesh, Nepal</p>
+    
+                    </div>
+                    <div class="p-3 email">
+                        <h4><i class="fa-solid fa-envelope"></i>Email:</h4>
+                        <p>hatemalo_info@gmail.com</p>
+    
+                    </div>
+                    <div class="p-3 phone">
+                        <h4><i class="fa-solid fa-phone"></i>Phone Number:</h4>
+                        <p>+977 053-521796</p>
+    
+                    </div>
+
+                </div>
+                
+            </div>
+    
+        </div>
+        
+
+    </div>
+    
+
+</div>
+
+{% endblock content %}
+
+
+
+
+
+
+
+

@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}}
+{% block content %}
+
+<form class="p-5 mt-5" action="" method="post" enctype="multipart/form-data" >
+  <h1 class="text-center">Fill Up The Form</h1>
+    {% csrf_token %}
+    {{ form|crispy }}
+    <!--- manually html form
+        <div class="form-group mb-3 ">
+            <label for="exampleFormControlInput1" class="form-label">Enter Your First Name</label>
+            <input type="text" name="firstname" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
+        </div>
+        <div class="form-group mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter Your Last Name</label>
+            <input type="text" name="lastname" class="form-control" id="exampleFormControlInput2" placeholder="Last Name">
+        </div>
+        <div class="form-group mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter Your Phone Number</label>
+            <input type="number" name="phone" class="form-control" id="exampleFormControlInput2" placeholder="Phone Number">
+        </div>
+      <div class="form-group mb-3">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" name="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      
+      <div class="form-group mb-3">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+
+      <div class="form-group">
+        <label for="inputAddress">Permanent Address</label>
+        <input type="text" name="paddress" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Tempory Address</label>
+        <input type="text" name=taddress class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div>
+     
+        <div class="form-group col-md-6 mb-3">
+          <label for="exampleFormControlSelect1">Select Pradesh</label>
+          <select name="selectpradesh" class="form-control" id="exampleFormControlSelect1">
+            <option selected>Open this select menu</option>
+            <option>Province No. 1</option>
+            <option>Province No. 2</option>
+            <option>Province No. 3</option>
+            <option>Gandaki Pradesh</option>
+            <option>Province No. 5</option>
+            <option>Karnali Pradesh</option>
+            <option>Sudurpashchim Pradesh</option>
+          </select>
+        </div>
+        
+      
+      
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="male" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Male
+            </label>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="female">
+            <label class="form-check-label" for="exampleRadios2">
+              Female
+            </label>
+        </div>
+        
+        <div class="form-group mb-3">
+          <label for="exampleFormControlTextarea1">Enter Your Message</label>
+          <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-check form-check-inline">     
+            <input class="form-check-input" type="checkbox" name=stream id="inlineCheckbox1" value="Science">
+            <label class="form-check-label" for="inlineCheckbox1">Science</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name=stream  id="inlineCheckbox2" value="Mangement">
+            <label class="form-check-label" for="inlineCheckbox2">Mangement</label>
+        </div>
+        <div class="form-check form-check-inline mb-3">
+            <input class="form-check-input" type="checkbox" name=stream  id="inlineCheckbox3" value="Arts" >
+            <label class="form-check-label" for="inlineCheckbox3">Arts</label>
+        </div>
+        <div class="form-group mb-3">
+          <label for="exampleFormControlFile1">Example file input</label>
+          <input type="file" name="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+        <div class="form-group form-check mb-3">
+          <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Accept Term And policy</label>
+        </div>
+      -->
+      <button type="sumbit" class="btn btn-primary btn-lg">Submit</button>
+      
+  </form>
+  
+{% endblock content %}
