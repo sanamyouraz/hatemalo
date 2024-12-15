@@ -1,0 +1,364 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-brg{
+  
+   
+    
+
+}
+
+
+footer {
+    flex: 0 0 auto; /* Footer at the bottom */
+    margin-top: auto;
+}
+
+
+
+
+.footer-brg{
+    width: 100%;
+    position: static;
+    bottom: 0;
+    background:linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 50px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+   
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col h4{
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+ul li {
+    list-style: none;
+    color: #fff;
+}
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+.social-link .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+/*--------------Test CSS Start---------------------------*/
+#id_gender label {
+    display: block; /* Make each label block-level to contain the radio button and its text */
+    padding: 0.5rem; /* Optional: Adjust padding to better space the elements */
+}
+
+#id_gender input[type="radio"] {
+    margin-right: 0.5rem; /* Optional: Adjust the margin if needed */
+}
+
+/*--------------Test CSS End-----------------------------*/
+
+/*--------------Form CSS Start----------------------------*/
+.forminput{
+    background:linear-gradient(to right, #00093c, #2d0b00);
+    
+    width: 1000px;
+    left: 155px;
+    top: 171px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.forminput:hover {
+    transform: scale(1.05); /* Zoom effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+/*--------------Form CSS End------------------------------*/
+
+/* -----------------Contact CSS Start-------------------------*/
+.send_message{   
+    background:linear-gradient(to right, #00093c, #2d0b00);
+    height: 500px;
+    width: 525px;
+    left: 155px;
+    top: 171px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    
+}
+.send_message:hover {
+    transform: scale(1.1); /* Zoom effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.form-control{
+    height: 52px;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none !important;
+    border: 1px solid;
+    transition: box-shadow 0.3s ease;
+}
+.form-control:hover {
+    transform: scale(1.001); /* Zoom effect */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+.btn-primary{
+    background-color: #5a4d19;
+    border: #5a4d19;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover{
+    background-color: #000;
+}
+
+
+.call_us{
+    background:linear-gradient(to right, #00093c, #2d0b00);
+    height: 500px;
+    width: 525px;
+    left: 155px;
+    top: 171px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.call_us:hover {
+    transform: scale(1.1); /* Zoom effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+/*--------------Contact CSS End----------------------------*/
+
+
+/*--------------Services CSS Start-------------------------*/
+
+.services{
+    padding: 50px 0;
+    background: #f3f5fa;
+}
+.services_card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    background: #fff;
+}
+
+
+
+.icon-wrapper {
+    color: #007bff; /* Customize the icon color */
+}
+/*---------------Services CSS end--------------------------*/
+
+/*------------Team CSS Start-------------------------------*/
+.team {
+    padding: 50px 0;
+    background: #f3f5fa;
+}
+.team_h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.team p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Team Card Styling */
+.team_card {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.team_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Team Image */
+.team_img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.team_img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.team_card:hover .team_img img {
+    transform: scale(1.1); /* Zoom effect */
+}
+
+/* Social Icons */
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+}
+.social-icon .fa-brands {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
+    border-radius: 50%; /* Makes the icon round */
+    background-color: #f0f3f7; /* Light background */
+    color: #37517e; /* Icon color (blue) */
+    font-size: 20px; /* Icon size */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hover transition */
+}
+.social-icon .fa-brands:hover {
+    background-color: #4267B2; /* Darker blue on hover */
+    color: #fff; /* White icon on hover */
+}
+
+.team_card h3 {
+    color: #37517e;
+    font-weight: bold;
+    margin-bottom: 10px; /* Optional: Adds spacing between h3 and p */
+}
+
+/* Style for the p tag */
+.team_card p {
+    position: relative;
+    color: #333;
+    margin-bottom: 15px; /* Adds spacing between p and the social icons */
+    text-decoration: none; /* Disable default underline */
+}
+
+/* Adding the animated underline using ::after */
+.team_card p::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Place the underline slightly below the text */
+    left: 0;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #007bff; /* Blue color for the underline */
+    animation: underlineAnimation 4s infinite; /* Apply animation */
+}
+
+/* Keyframes for underline animation */
+@keyframes underlineAnimation {
+    0% {
+        width: 0; /* Start with no underline */
+    }
+    50% {
+        width: 100%; /* Expand underline to full width */
+    }
+    100% {
+        width: 0; /* Shrink it back to no underline */
+    }
+}
+
+/*-------------Team CSS End---------------*/
+
+
+
+/*
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes moving {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width:700px){
+.footer-brg{
+    bottom: unset;
+}
+
+}
+
+*/
+
